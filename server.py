@@ -3,10 +3,10 @@ import os
 
 app = Flask(__name__)
 
+# @app.route("/")
+# def main():
+#   return render_template("home.html")
 @app.route("/")
-def main():
-  return render_template("home.html")
-@app.route("/test")
 def test():
   return "hello ius , you make a succesfully test"
 @app.route("/login")
