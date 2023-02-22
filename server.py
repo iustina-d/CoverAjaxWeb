@@ -27,6 +27,3 @@ def about_us():
 @app.route("/contact-us")
 def contact_us():
   return render_template("contact_us.html")
-
-# if __name__ == "__main__":
-#   app.run(debug=False,host='0.0.0.0')
