@@ -1,5 +1,4 @@
-from flask import Flask
-# ,render_template
+from flask import Flask,render_template
 import os
 # import data_manager
 
@@ -13,8 +12,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-  return "hello ius"
-  # return render_template("home.html")
+  #return "hello ius"
+  return render_template("home.html")
 @app.route("/test")
 def test():
   return "hello ius , you make a succesfully test"
